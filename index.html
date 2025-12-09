@@ -478,13 +478,13 @@
 
         /* qoralka iconka agyala logo  */
         .gradient-text {
-    font-weight: 800;
-    font-size: 1.6rem ;
-    background: linear-gradient(90deg, #6a5af9, #4f7cf0, #3ac7e5);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline-block;
-}
+            font-weight: 800;
+            font-size: 1.6rem;
+            background: linear-gradient(90deg, #6a5af9, #4f7cf0, #3ac7e5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
 
 
         .nav-links {
@@ -2156,7 +2156,95 @@
             }
         }
 
+
         @media (max-width: 600px) {
+
+    /* ----------- MAIN CONTACT CONTAINER SAFE PADDING ----------- */
+    #contact .container {
+        padding: 12px !important;
+        box-sizing: border-box;
+    }
+
+    /* ----------- CONTACT WRAPPER ----------- */
+    .contact-layout {
+        padding: 10px !important;
+        gap: 14px;
+        box-sizing: border-box;
+        border-radius: 12px;
+    }
+
+    /* ----------- TITLES & TEXT ----------- */
+    #contact h2.section-title {
+        font-size: 1.6rem !important;
+    }
+
+    #contact .section-subtitle {
+        font-size: 0.9rem !important;
+        line-height: 1.5;
+    }
+
+    .contact-info h3 {
+        font-size: 1.4rem !important;
+    }
+
+    .contact-info p {
+        font-size: 0.9rem !important;
+        line-height: 1.55;
+    }
+
+    /* ----------- CONTACT INFO ITEMS ----------- */
+    .info-item {
+        padding: 12px;
+        border-radius: 12px;
+        background: var(--card-bg);
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    .info-item i {
+        font-size: 1.1rem;
+    }
+
+    /* ----------- MAP BOX ----------- */
+    .map-box iframe {
+        border-radius: 10px;
+        width: 100% !important;
+        height: 200px !important;   /* ↓↓↓ HEIGHT YAREYN   */
+    }
+
+    /* ----------- CONTACT FORM ----------- */
+    .contact-form {
+        padding: 8px !important;
+        box-sizing: border-box;
+    }
+
+    .form-group {
+        margin-bottom: 12px;
+    }
+
+    .form-input {
+        width: 100%;
+        padding: 12px 14px;   /* ↓↓↓ TEXT SIZE SLIM */
+        font-size: 0.9rem;    /* ↓↓↓ INPUT TEXT YARYAH */
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+
+    /* ----------- BUTTON ----------- */
+    .contact-form button {
+        margin-top: 5px;
+        padding: 10px 14px;       /* ↓↓↓ BUTTON HEIGHT SLIM */
+        font-size: 0.95rem;       /* ↓↓↓ TEXT YARE */
+        width: 100%;
+        border-radius: 12px;
+        box-sizing: border-box;
+    }
+}
+
+
+
+        /* @media (max-width: 600px) {
+            
             .pricing-header h2 {
                 font-size: 2.2rem;
             }
@@ -2225,7 +2313,7 @@
                 height: 40px;
                 font-size: 1rem;
             }
-        }
+        } */
 
         @media (max-width: 480px) {
             body {
@@ -2301,12 +2389,12 @@
     <div class="floating-element"></div>
 
     <!-- Header -->
-   <header>
-    <div class="container nav-container">
-        <a href="#" class="logo">
-            <img src="images/logo-3.png" alt="Warsantech Logo">
-            <span class="gradient-text">WARSANTECH</span>
-        </a>
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="images/logo-3.png" alt="Warsantech Logo">
+                <span class="gradient-text">WARSANTECH</span>
+            </a>
 
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
